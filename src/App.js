@@ -4,6 +4,16 @@ import TOC from './components/TOC';
 import Subject from './components/Subject'
 import Content from './components/Content'
 
+class Test extends Component {
+  render() {
+    return (
+      <div>
+        <h2>test문서 입니다.</h2>
+      </div>
+    );
+  }
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +35,8 @@ class App extends Component {
         </Subject>
         <Subject title="React" sub="For UI"></Subject>
         <TOC data={this.state.contents}></TOC>
-        <Content title="HTML" desc="HTML is HyperText Markup Language."></Content>
+        <Content></Content>
+        <Test></Test>
       </div>
     );
   }
